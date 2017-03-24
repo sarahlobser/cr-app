@@ -1,0 +1,10 @@
+<h1>XSS Ripe</h1>
+<h2>Please enter some information below, just to see what happens.</h2>
+<form action="/xsshere" method="get">
+    <label>Valuable Information:</label><input type="text" id="getInfo" name="getInfo"/>
+    <input type="submit" value="Hope for the best"/>
+</form>
+<form action="/xsshere" method="post">
+    <label>Secret only you should know:</label><input type="text" id="postInfo" name="postInfo"/>
+    <input type="submit" value="Try your luck"/>
+</form>
